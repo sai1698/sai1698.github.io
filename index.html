@@ -1,8 +1,156 @@
+<!DOCTYPE html>
 <html>
-  <head>
-  <link rel="icon" type="image/png" href="logo.png" sizes="16x16">
-  </head>
+<style>
+body{
+background:#ECECEA;
+}
+.body {
+    font-family: "Lato", sans-serif;
+    background-image: url("images.jpg");
+	 background-repeat: no-repeat;
+	 background-size: 100% 100%;
+	margin:0px;
+	padding:0px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 5s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+.header{
+margin:0px;
+padding:0px;
+width:auto;
+height:50px;
+background-color:#558C89;
+
+}
+.footer{
+width:auto;
+height:50px;
+background-color:#558C89;
+border-radius: 10px;
+text-align:center;
+}
+.leftbody{
+    width: 60%;
+    height: 900px;
+    background-color: red;
+	margin-top:20px;
+	margin-left:30px;
+	border-radius: 10px;
+}
+.rightbody{
+    width: 15%;
+    height: 900px;
+    background-color: red;
+	margin-top:20px;
+	margin-right:30px;
+	border-radius: 10px;
+}
+.bottombody{
+width: auto;
+    height: 40px;
+    background-color: red;
+	
+}
+.main{
+width:auto;
+height:500px;
+
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
 <body>
-saiNaveen
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="close.png" heigth="50px" width="50px"></a>
+  <a href="cse.html" >COMPUTER SCIENCE </a>
+  <a href="ece.html">ELECTRONICS AND COMMUNICATION</a>
+  <a href="eee.html">ELECTRICAL AND ELECTRONICS</a>
+  <a href="mech.html">MECHANICAL</a>
+  <a href="meta.html">METALLURGY</a>
+  <a href="prod.html">PRODUCTION</a>
+  <a href="ice.html">INSTRUMENTATION AND CONTROL</a>
+</div>
+<div class="header">
+<span style="font-size:30px;cursor:pointer" onclick="openNav()"> <img src="toogle.png" heigth="50px" width="50px"></span></br></br>
+</div>
+<div class="body">
+<div class="main">
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+
+</div>
+</div>
+
+<div class="footer">
+made by das
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "300px";
+	
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+     
 </body>
 </html>
+
